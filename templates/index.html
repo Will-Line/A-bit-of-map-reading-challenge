@@ -3,5 +3,17 @@
 <html lang="en">
 
 {% block body %}
+<h1>Hello, welcome to my elevation finder</h1>
 
+<form method="post" action="" enctype="multipart/form-data">
+    <input type="file" id="file" name="file" accept=".gpx">
+    <label for="coordinates">Coordinates</label>
+    <input type="text" id="coordinates" name="coordinates">
+    <input type="submit">
+</form>
+
+<div class="mt-5">
+  <h3>Your elevation is: </h3>
+  <h4>{{elevation}}</h4>
+</div>
 {% endblock %}
