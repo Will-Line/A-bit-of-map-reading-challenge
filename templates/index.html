@@ -8,15 +8,16 @@
 <form method="post" action="" enctype="multipart/form-data">
     <label for="file">Enter GPX file</label>
     <input type="file" id="file" name="file" accept=".gpx" required>
-    <label for="longitude">Longitude</label>
-    <input type="text" id="longitude" name="longitude" value="00.00000" required>
     <label for="latitude">Latitude</label>
     <input type="text" id="latitude" name="latitude" value="00.00000" required>
+    <label for="longitude">Longitude</label>
+    <input type="text" id="longitude" name="longitude" value="00.00000" required>
     <input type="submit">
 </form>
 
 <div class="mt-5">
   <h3>Your elevation is: </h3>
   <h4>{{elevation}}</h4>
+  <h4 class="mt-5">{{comment}}</h4>
 </div>
 {% endblock %}
